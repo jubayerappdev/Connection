@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "794481552218",
+    "project_id": "connection-a6041",
+    "storage_bucket": "connection-a6041.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794481552218:android:c35f35db49ec8148dc6163",
+        "android_client_info": {
+          "package_name": "com.creativeitinstitute.connection"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKX46_fV-DOMlZ7akafCjUNXe4meBw9qg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
