@@ -60,4 +60,7 @@ dependencies {
     //navigation kotlin
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
+
+    implementation (libs.circleimageview)
+    implementation(libs.coil)
 }
