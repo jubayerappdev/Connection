@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import coil.load
 import com.creativeitinstitute.connection.EditProfileFragment
 import com.creativeitinstitute.connection.R
 import com.creativeitinstitute.connection.databinding.FragmentProfileBinding
@@ -87,6 +88,8 @@ class ProfileFragment : Fragment() {
                         binding.userEmail.text = it.email
                         binding.bio.text = it.bio
                         binding.fullName.text = it.fullName
+
+                        binding.profileImage.load(it.profileImage)
                     }
 
                 }
@@ -99,8 +102,5 @@ class ProfileFragment : Fragment() {
         )
 
     }
-
-
-
 
 }

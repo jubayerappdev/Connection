@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
+import coil.load
 import com.creativeitinstitute.connection.databinding.ItemUserBinding
 import com.creativeitinstitute.connection.utils.User
 
@@ -35,6 +36,7 @@ class UserAdapter (val userListener:UserListener):ListAdapter<User, UserViewHold
                 fullName.text = it.fullName
                 userBio.text = it.bio
                 email.text = it.email
+                profileImage.load(it.profileImage)
 
                 holder.itemView.setOnClickListener { _ ->
                     userListener.userItemClick(it)

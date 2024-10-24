@@ -63,4 +63,10 @@ dependencies {
 
     implementation (libs.circleimageview)
     implementation(libs.coil)
+
+
+    implementation(libs.dexter)
+    implementation(libs.imagepicker)
+    implementation(libs.activity.ktx)
+    implementation(libs.fragment.ktx)
 }
