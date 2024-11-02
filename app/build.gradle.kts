@@ -69,4 +69,7 @@ dependencies {
     implementation(libs.imagepicker)
     implementation(libs.activity.ktx)
     implementation(libs.fragment.ktx)
+    implementation(libs.glide)
+
+
 }

@@ -1,16 +1,22 @@
 package com.creativeitinstitute.connection.views.home
 
+
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import coil.load
+import com.bumptech.glide.Glide
+import com.creativeitinstitute.connection.R
 import com.creativeitinstitute.connection.databinding.ItemUserBinding
 import com.creativeitinstitute.connection.utils.User
 
 
+
 class UserAdapter (val userListener:UserListener):ListAdapter<User, UserViewHolder>(COMPARATOR){
 
+    private lateinit var context: Context
     interface UserListener{
         fun userItemClick(user: User)
     }
@@ -18,6 +24,7 @@ class UserAdapter (val userListener:UserListener):ListAdapter<User, UserViewHold
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
 
+        context = parent.context
         return UserViewHolder(
             ItemUserBinding.inflate(
                 LayoutInflater.from(parent.context),
@@ -36,9 +43,13 @@ class UserAdapter (val userListener:UserListener):ListAdapter<User, UserViewHold
                 fullName.text = it.fullName
                 userBio.text = it.bio
                 email.text = it.email
-                profileImage.load(it.profileImage)
+//                profileImage.load(it.profileImage)
+
+                Glide.with(context).load(it.profileImage).placeholder(R.drawable.placeholder)
+                    .into(profileImage)
 
                 holder.itemView.setOnClickListener { _ ->
+
                     userListener.userItemClick(it)
                 }
             }

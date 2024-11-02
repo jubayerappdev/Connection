@@ -113,6 +113,7 @@ class EditProfileFragment : Fragment() {
                 profileStorage.downloadUrl.addOnSuccessListener {data->
 
 
+//                    imageLink = data.toString()
 
                     profileUpdateWithImage(data.toString())
 
