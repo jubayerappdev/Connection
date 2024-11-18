@@ -7,7 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
-        android:id="@+id/leftChatUI"
+        android:id="@+id/chatTV"
         android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
         android:fontFamily="@font/roboto"
         android:layout_margin="4dp"

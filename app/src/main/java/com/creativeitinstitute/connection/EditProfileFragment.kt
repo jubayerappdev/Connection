@@ -15,7 +15,7 @@ import com.creativeitinstitute.connection.databinding.FragmentEditProfileBinding
 import com.creativeitinstitute.connection.databinding.FragmentProfileBinding
 import com.creativeitinstitute.connection.nodes.DBNODES
 import com.creativeitinstitute.connection.utils.User
-import com.creativeitinstitute.connection.views.profile.ProfileFragment.Companion.USERID
+//import com.creativeitinstitute.connection.views.profile.ProfileFragment.Companion.USERID
 import com.github.dhaval2404.imagepicker.ImagePicker
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
